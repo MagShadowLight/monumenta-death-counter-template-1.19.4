@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "death-counter",
+	"version": "${version}",
+	"name": "death counter",
+	"description": "meow",
+	"authors": [
+		"MagShadowLight"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/death-counter/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"death.DeathCounter"
+		],
+		"client": [
+			"death.DeathCounterClient"
+		],
+		"fabric-datagen": [
+			"death.DeathCounterDataGenerator"
+		]
+	},
+	"mixins": [
+		"death-counter.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.10",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
