@@ -16,6 +16,6 @@ public abstract class ExampleMixin {
 
 	@Inject(at = @At("TAIL"), method = "onDeath")
 	private void init(CallbackInfo info) {
-
+		MinecraftClient.getInstance().player.sendMessage(Text.literal("Owwwwww"));
 	}
 }
